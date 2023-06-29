@@ -1,0 +1,15 @@
+{
+    "name": "Google Map Calculator",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "google mapの座標から世界地図マップの座標を計算するツール。ポップアップを固定する場合はポップアップウインドウで検証を開く。",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.co.jp/maps/*","https://www.google.com/maps/*"],
+        "js": ["map-events.js"]
+      }
+    ]
+  }
